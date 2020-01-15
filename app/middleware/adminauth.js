@@ -6,6 +6,7 @@ module.exports = (options, app) => {
       await next();
     } else {
       ctx.body = { data: '没有登录' };
+      await next();
     }
   };
 };
